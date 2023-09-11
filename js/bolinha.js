@@ -2,6 +2,7 @@
 let xBolinha = 300;
 let yBolinha = 200;
 let diametroBolinha = 20;
+let raioBolinha = diametroBolinha/ 2;
 
 //variaveis da velocidade da bolinha
 let velocidadeXBolinha = 2;
@@ -13,10 +14,10 @@ function movimentaBolinha(){
 }
 
 function verificaColisaoBorda(){
-if(xBolinha > width || xBolinha < 0) {
+if(xBolinha + raioBolinha > width || xBolinha - raioBolinha < 0) {
     velocidadeXBolinha *= -1;
     } 
-    if(yBolinha > height || yBolinha < 0) {
+    if(yBolinha + raioBolinha > height || yBolinha - raioBolinha < 0) {
         velocidadeYBolinha *= -1;
     }
 }
