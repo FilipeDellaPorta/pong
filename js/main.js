@@ -8,6 +8,7 @@ function draw() {
     mostraRaquete(xRaquete,yRaquete);
     mostraRaquete(xOponenteRaquete,yOponenteRaquete);
     movimentaBolinha();
+    movimentaRaquete();
     verificaColisaoBorda();
 }
 
