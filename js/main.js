@@ -4,7 +4,9 @@ function setup() {
 
 function draw() {
     background(0);
-    circle(xBolinha,yBolinha,diametroBolinha);
+    mostraBolinha();
+    mostraRaquete(xRaquete,yRaquete);
+    mostraRaquete(xOponenteRaquete,yOponenteRaquete);
     movimentaBolinha();
     verificaColisaoBorda();
 }

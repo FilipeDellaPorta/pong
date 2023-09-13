@@ -8,6 +8,10 @@ let raioBolinha = diametroBolinha/ 2;
 let velocidadeXBolinha = 2;
 let velocidadeYBolinha = 2;
 
+function mostraBolinha (){
+    circle(xBolinha,yBolinha,diametroBolinha);
+}
+
 function movimentaBolinha(){
     xBolinha += velocidadeXBolinha;
     yBolinha += velocidadeYBolinha;
