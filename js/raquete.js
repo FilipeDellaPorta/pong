@@ -1,11 +1,12 @@
 //variaveis da forma da minha raquete e raquete do oponente
-let xRaquete =  0;
+let xRaquete =  -5;
 let yRaquete = 150;
 let larguraRaquete = 15;
 let alturaRaquete = 100;
-let xOponenteRaquete = 585;
+let xOponenteRaquete = 590;
 let yOponenteRaquete = 150;
 let yVelocidadeRaquete = 5;
+let yVelocidadeOponenteRaqueteAI;
 //variavel utilizando a biblioteca p5.collide2d
 let colidiu = false;
 
@@ -51,3 +52,12 @@ function movimentaRaquetePlayer2(){
     }
     yOponenteRaquete = constrain (yOponenteRaquete, 0, 300);
 }
+
+function movimentaOponenteRaqueteAI(){
+
+        yVelocidadeOponenteRaqueteAI = yBolinha - yOponenteRaquete -alturaRaquete/2 -30;
+        yOponenteRaquete += yVelocidadeOponenteRaqueteAI;
+ 
+        
+}
+
