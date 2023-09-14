@@ -16,7 +16,6 @@ function mostraRaquete(x,y){
 function movimentaRaquete(){
     if(keyIsDown(UP_ARROW)){
         yRaquete -= yVelocidadeRaquete;
-        constrain 
     }
     if(keyIsDown(DOWN_ARROW)){
         yRaquete += yVelocidadeRaquete;
@@ -41,4 +40,14 @@ function colisaoRaqueteBiblioteca(x,y){
     if (colidiu){
         velocidadeXBolinha *= -1;
     }
+}
+
+function movimentaRaquetePlayer2(){
+    if(keyIsDown(87)){
+        yOponenteRaquete -= yVelocidadeRaquete;
+    }
+    if(keyIsDown(83)){
+        yOponenteRaquete += yVelocidadeRaquete;
+    }
+    yOponenteRaquete = constrain (yOponenteRaquete, 0, 300);
 }
