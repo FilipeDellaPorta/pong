@@ -23,7 +23,10 @@ function movimentaRaquete(){
 }
 
 function verificaColisaoRaquete(){
-    if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha + raioBolinha > yRaquete){
+    if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+        velocidadeXBolinha *= -1;
+    } 
+    if (xBolinha + raioBolinha > xOponenteRaquete && yBolinha - raioBolinha < yOponenteRaquete + alturaRaquete && yBolinha + raioBolinha > yOponenteRaquete){
         velocidadeXBolinha *= -1;
     } 
 }
