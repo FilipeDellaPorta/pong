@@ -1,6 +1,8 @@
 //variaveis da forma da bolinha
-let xBolinha = 300;
-let yBolinha = 200;
+let xBolinhaPosicaoInicial = 300;
+let yBolinhaPosicaoInicial = 200;
+let xBolinha = xBolinhaPosicaoInicial;
+let yBolinha = yBolinhaPosicaoInicial;
 let diametroBolinha = 20;
 let raioBolinha = diametroBolinha/ 2;
 
@@ -15,7 +17,7 @@ function mostraBolinha (){
 
 function movimentaBolinha(){
     xBolinha += velocidadeXBolinha;
-   // yBolinha += velocidadeYBolinha;
+    yBolinha += velocidadeYBolinha;
 }
 
 function verificaColisaoBorda(){
@@ -26,3 +28,10 @@ if(xBolinha + raioBolinha > width || xBolinha - raioBolinha < 0) {
         velocidadeYBolinha *= -1;
     }
 }
+
+function bolinhaPresa() {
+    if (keyIsDown(32)) {
+     xBolinha = xBolinhaPosicaoInicial;
+     yBolinha = yBolinhaPosicaoInicial;
+   }
+ }
