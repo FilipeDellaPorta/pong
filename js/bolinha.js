@@ -15,7 +15,7 @@ function mostraBolinha (){
 
 function movimentaBolinha(){
     xBolinha += velocidadeXBolinha;
-    yBolinha += velocidadeYBolinha;
+   // yBolinha += velocidadeYBolinha;
 }
 
 function verificaColisaoBorda(){
