@@ -10,5 +10,6 @@ function draw() {
     movimentaBolinha();
     movimentaRaquete();
     verificaColisaoBorda();
+    verificaColisaoRaquete();
 }
 

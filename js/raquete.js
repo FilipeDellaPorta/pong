@@ -14,8 +14,16 @@ function mostraRaquete(x,y){
 function movimentaRaquete(){
     if(keyIsDown(UP_ARROW)){
         yRaquete -= yVelocidadeRaquete;
+        constrain 
     }
     if(keyIsDown(DOWN_ARROW)){
         yRaquete += yVelocidadeRaquete;
     }
+    yRaquete = constrain(yRaquete,0,300);
+}
+
+function verificaColisaoRaquete(){
+    if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha + raioBolinha > yRaquete){
+        velocidadeXBolinha *= -1;
+    } 
 }
