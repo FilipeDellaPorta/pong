@@ -5,8 +5,9 @@ let diametroBolinha = 20;
 let raioBolinha = diametroBolinha/ 2;
 
 //variaveis da velocidade da bolinha
-let velocidadeXBolinha = 2;
-let velocidadeYBolinha = 2;
+let velocidadeXYBolinha = 5;
+let velocidadeXBolinha = velocidadeXYBolinha;
+let velocidadeYBolinha = velocidadeXYBolinha;
 
 function mostraBolinha (){
     circle(xBolinha,yBolinha,diametroBolinha);
@@ -14,7 +15,7 @@ function mostraBolinha (){
 
 function movimentaBolinha(){
     xBolinha += velocidadeXBolinha;
-    //yBolinha += velocidadeYBolinha;
+    yBolinha += velocidadeYBolinha;
 }
 
 function verificaColisaoBorda(){
