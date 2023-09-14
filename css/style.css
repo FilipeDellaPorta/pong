@@ -6,3 +6,7 @@ html, body {
     display: block;
   }
   
+  .cabecalho-a {
+    font-size: 48px;
+    text-decoration: none;
+  }
