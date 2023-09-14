@@ -6,6 +6,8 @@ let alturaRaquete = 100;
 let xOponenteRaquete = 585;
 let yOponenteRaquete = 150;
 let yVelocidadeRaquete = 5;
+//variavel utilizando a biblioteca p5.collide2d
+let colidiu = false;
 
 function mostraRaquete(x,y){
     rect(x,y,larguraRaquete,alturaRaquete);
@@ -29,4 +31,14 @@ function verificaColisaoRaquete(){
     if (xBolinha + raioBolinha > xOponenteRaquete && yBolinha - raioBolinha < yOponenteRaquete + alturaRaquete && yBolinha + raioBolinha > yOponenteRaquete){
         velocidadeXBolinha *= -1;
     } 
+}
+
+
+
+function colisaoRaqueteBiblioteca(x,y){
+
+    colidiu = collideRectCircle(x, y, larguraRaquete, alturaRaquete, xBolinha, yBolinha, diametroBolinha);
+    if (colidiu){
+        velocidadeXBolinha *= -1;
+    }
 }
