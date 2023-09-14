@@ -7,7 +7,7 @@ CC BY-NC-SA 4.0
 */
 
 
-console.log("FreeWay")
+console.log("Pong")
 
 p5.prototype._collideDebug = false;
 
