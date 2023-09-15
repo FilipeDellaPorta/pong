@@ -35,7 +35,7 @@ function verificaColisaoRaquete(){
 
 
 
-function colisaoRaqueteBiblioteca(x,y){
+function verificaColisaoRaqueteBiblioteca(x,y){
 
     colidiu = collideRectCircle(x, y, larguraRaquete, alturaRaquete, xBolinha, yBolinha, diametroBolinha);
     if (colidiu){

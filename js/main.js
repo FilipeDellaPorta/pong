@@ -14,8 +14,8 @@ function draw() {
    // movimentaOponenteRaqueteAI();
     verificaBolinhaColisaoBorda();
     //verificaColisaoRaquete();
-    colisaoRaqueteBiblioteca(xRaquete,yRaquete);
-    colisaoRaqueteBiblioteca(xOponenteRaquete,yOponenteRaquete);
+    verificaColisaoRaqueteBiblioteca(xRaquete,yRaquete);
+    verificaColisaoRaqueteBiblioteca(xOponenteRaquete,yOponenteRaquete);
     mostraPlacar();
     marcaPontos();
 }
