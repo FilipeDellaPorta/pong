@@ -11,10 +11,12 @@ function draw() {
     bolinhaPresa();
     movimentaRaquete();
     //movimentaRaquetePlayer2();
-    movimentaOponenteRaqueteAI();
+   // movimentaOponenteRaqueteAI();
     verificaColisaoBorda();
     //verificaColisaoRaquete();
     colisaoRaqueteBiblioteca(xRaquete,yRaquete);
     colisaoRaqueteBiblioteca(xOponenteRaquete,yOponenteRaquete);
+    mostraPlacar();
+    marcaPontos();
 }
 
