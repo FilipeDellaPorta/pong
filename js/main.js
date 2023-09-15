@@ -12,7 +12,7 @@ function draw() {
     movimentaRaquete();
     //movimentaRaquetePlayer2();
    // movimentaOponenteRaqueteAI();
-    verificaColisaoBorda();
+    verificaBolinhaColisaoBorda();
     //verificaColisaoRaquete();
     colisaoRaqueteBiblioteca(xRaquete,yRaquete);
     colisaoRaqueteBiblioteca(xOponenteRaquete,yOponenteRaquete);

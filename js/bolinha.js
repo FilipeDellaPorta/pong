@@ -20,7 +20,7 @@ function movimentaBolinha(){
     yBolinha += velocidadeYBolinha;
 }
 
-function verificaColisaoBorda(){
+function verificaBolinhaColisaoBorda(){
 if(xBolinha + raioBolinha > width || xBolinha - raioBolinha < 0) {
     velocidadeXBolinha *= -1;
     } 
