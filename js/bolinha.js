@@ -33,5 +33,7 @@ function bolinhaPresa() {
     if (keyIsDown(32)) {
      xBolinha = xBolinhaPosicaoInicial;
      yBolinha = yBolinhaPosicaoInicial;
+     meusPontos = 0;
+     oponentePontos = 0;
    }
  }
