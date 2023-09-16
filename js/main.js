@@ -26,7 +26,7 @@ function draw() {
     verificaColisaoRaqueteBiblioteca(xOponenteRaquete,yOponenteRaquete);
     mostraPlacar();
     marcaPontos();
-    silenciaTrilha();
+    silenciaSons();
 
 }
 

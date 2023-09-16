@@ -26,10 +26,10 @@ function mostraPlacar(){
 function marcaPontos(){
     if (xBolinha > 591){
         meusPontos += 1;
-        ponto.play();
+        tocaPonto();
     }
     if (xBolinha < 9){
         oponentePontos +=1;
-        ponto.play();
+        tocaPonto();
     }
 }
