@@ -7,7 +7,7 @@ let trilhaTocando = true;
 let pontoTocando = true;
 let raquetadaTocando = true;
 
-//tocando a trilha do jogo
+//tocando os sons do jogo
 function tocaTrilha(){
     if(!trilhaTocando){
         return;
