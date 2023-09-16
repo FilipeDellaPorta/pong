@@ -5,6 +5,7 @@ let xBolinha = xBolinhaPosicaoInicial;
 let yBolinha = yBolinhaPosicaoInicial;
 let diametroBolinha = 20;
 let raioBolinha = diametroBolinha/ 2;
+let bolinhaMovendo = true;
 
 //variaveis da velocidade da bolinha
 let velocidadeXYBolinha = 5;
@@ -17,6 +18,10 @@ function mostraBolinha (){
 }
 
 function movimentaBolinha(){
+    if(!bolinhaMovendo){
+
+    return;
+    }
     xBolinha += velocidadeXBolinha;
     yBolinha += velocidadeYBolinha;
 }
@@ -30,11 +35,20 @@ if(xBolinha + raioBolinha > width || xBolinha - raioBolinha < 0) {
     }
 }
 
-function bolinhaPresa() {
+function bolinhaPresa(){
     if (keyIsDown(32)) {
      xBolinha = xBolinhaPosicaoInicial;
      yBolinha = yBolinhaPosicaoInicial;
      meusPontos = 0;
      oponentePontos = 0;
    }
+ }
+
+ function pararBolinha(){
+    if(keyIsDown(80)){
+        bolinhaMovendo = false;
+    }
+    if(keyIsDown(67)){
+        bolinhaMovendo = true;
+    }
  }

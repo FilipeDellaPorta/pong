@@ -9,6 +9,7 @@ function draw() {
     mostraRaquete(xOponenteRaquete,yOponenteRaquete);
     movimentaBolinha();
     bolinhaPresa();
+    pararBolinha();
     movimentaRaquete();
     //movimentaRaquetePlayer2();
    // movimentaOponenteRaqueteAI();
