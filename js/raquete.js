@@ -28,9 +28,11 @@ function movimentaRaquete(){
 function verificaColisaoRaquete(){
     if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
         velocidadeXBolinha *= -1;
+        raquetada.play();
     } 
     if (xBolinha + raioBolinha > xOponenteRaquete && yBolinha - raioBolinha < yOponenteRaquete + alturaRaquete && yBolinha + raioBolinha > yOponenteRaquete){
         velocidadeXBolinha *= -1;
+        raquetada.play();
     } 
 }
 
@@ -41,6 +43,7 @@ function verificaColisaoRaqueteBiblioteca(x,y){
     colidiu = collideRectCircle(x, y, larguraRaquete, alturaRaquete, xBolinha, yBolinha, diametroBolinha);
     if (colidiu){
         velocidadeXBolinha *= -1;
+        raquetada.play();
     }
 }
 
