@@ -16,17 +16,6 @@ function tocaTrilha(){
     trilha.loop();
 }
 
- function silenciaSons(){
-     if(keyIsDown(77)){
-        trilhaTocando = false;
-        pontoTocando = false;
-        raquetadaTocando = false;
-        trilha.stop();
-        ponto.stop();
-        raquetada.stop();
-     } 
-}
-
 function tocaPonto(){
     if(!pontoTocando){
         return;
@@ -39,4 +28,25 @@ function tocaRaquetada(){
         return;
     }
     raquetada.play();
+}
+
+// function tocaSom(som, ativo){
+//     if (ativo) {
+//         som.play();
+//     }
+// }
+
+// tocaSom(trilha, trilhaTocando);
+// tocaSom(ponto, pontoTocando);
+// tocaSom(raquetada, raquetadaTocando);
+
+ function silenciaSons(){
+     if(keyIsDown(77)){
+        trilhaTocando = false;
+        pontoTocando = false;
+        raquetadaTocando = false;
+        trilha.stop();
+        ponto.stop();
+        raquetada.stop();
+     } 
 }
