@@ -10,3 +10,7 @@ html, body {
     font-size: 48px;
     text-decoration: none;
   }
+
+  .body-pong {
+    background-color: #27374d;
+  }
