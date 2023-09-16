@@ -12,7 +12,7 @@ let velocidadeXYBolinha = 5;
 let velocidadeXBolinha = velocidadeXYBolinha;
 let velocidadeYBolinha = velocidadeXYBolinha;
 
-//funcoes para mostrar a bolinha, mover a bolinha, soltar a bolinha e verificar a colisao da bolinha com a borda
+//funcoes para mostrar, mover, soltar a bolinha e verificar a colisao da bolinha com a borda
 function mostraBolinha (){
     circle(xBolinha,yBolinha,diametroBolinha);
 }

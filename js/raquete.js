@@ -10,7 +10,7 @@ let yVelocidadeOponenteRaqueteAI;
 //variavel utilizando a biblioteca p5.collide2d
 let colidiu = false;
 
-//funcoes para mostrar a raquete, movimentar a raquete e verificar colisao com a raquete
+//funcoes para mostrar e movimentar a raquete e verificar colisao com a raquete
 function mostraRaquete(x,y){
     rect(x,y,larguraRaquete,alturaRaquete);
 }
