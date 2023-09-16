@@ -1,14 +1,26 @@
 //variaveis do placar
 let meusPontos = 0;
 let oponentePontos = 0;
-let xPlacarPlayer1 = 150;
-let xPlacarPlayer2 = 450;
-let yPlacar = 50;
+let xMeusPontos = 150;
+let xOponentePlayer2 = 450;
+let yPontos = 50;
+let xPlacarMeusPontos = 130;
+let xPlacarOponentepontos = 430;
+let yPlacar = 35;
+let larguraPlacar = 40;
+let alturaPlacar = 20;
 
 function mostraPlacar(){
+    textAlign(CENTER);
+    textSize(16);
+    stroke(255);
+    fill(color(255,99,71));
+    rect(xPlacarMeusPontos, yPlacar, larguraPlacar, alturaPlacar);
+    rect(xPlacarOponentepontos, yPlacar, larguraPlacar, alturaPlacar);
     fill(255);
-    text(meusPontos, xPlacarPlayer1 , yPlacar);
-    text(oponentePontos, xPlacarPlayer2 , yPlacar);
+    text(meusPontos, xMeusPontos, yPontos);
+    text(oponentePontos, xOponentePlayer2, yPontos);
+
 }
 
 function marcaPontos(){
