@@ -7,4 +7,8 @@ html, body {
     display: block;
   }
   
+  .main {
+    display: flexbox;
+
+  }
  
