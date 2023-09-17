@@ -1,14 +1,31 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #27374d;
-  }
-  canvas {
-    display: block;
-  }
-  
-  .main {
-    display: flexbox;
+/* criar variaveis no css para evitar repeticao e fcilitar altracoes no estilo */
+:root {
+  --cor-primaria: #5C8EFA;
+  --cor-secundaria: #2F56AD;
+  --cot-terciaria: #BAFA43;
+  --cor-quartenaria: #FF2D14;
+}
 
+/* zerar a margem a preenchimento por padrao de todos os elementos */
+* {
+  margin: 0;  
+  padding: 0;
+}
+
+/* este etilo refere-se ao canvas e estava assim no editor p5j */
+canvas {
+  display: block;
+}
+
+
+body {
+    height: 100vh; /*usar o espaco total da pgina*/
+    box-sizing: border-box; /*evitar que elementos filho `vazem` para fora dos elementos pai*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
   }
+
+strong {
+  color: var(--cor-quartenaria);
+}
  

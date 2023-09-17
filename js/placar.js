@@ -23,13 +23,21 @@ function mostraPlacar(){
 
 }
 
+//tentado usar o setTimeout para corrigir o problema da marcação de pontos quando a bolinha fica presa
+//mas o que acontece é que ele só atrasa a contagem e as vezes mesmo zerando os pontos com a funcao
+//dentro do js bolinha chamada bolinhaPresa() ele acaba contabilizando estes pontos dentro do que 
+//seria uma "nova partida"
 function marcaPontos(){
     if (xBolinha > 591){
+       // setTimeout(function(){
         meusPontos += 1;
         tocaSom(ponto, pontoTocando);
+       // }, 1000);
     }
     if (xBolinha < 9){
+       // setTimeout(function(){
         oponentePontos +=1;
         tocaSom(ponto, pontoTocando);
+       // }, 1000); 
     }
 }
