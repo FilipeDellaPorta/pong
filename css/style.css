@@ -1,16 +1,10 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #27374d;
   }
   canvas {
     display: block;
   }
   
-  .cabecalho-a {
-    font-size: 48px;
-    text-decoration: none;
-  }
-
-  .body-pong {
-    background-color: #27374d;
-  }
+ 
