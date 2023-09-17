@@ -47,6 +47,7 @@ function verificaColisaoRaqueteBiblioteca(x,y){
     }
 }
 
+
 function movimentaRaquetePlayer2(){
     if(keyIsDown(UP_ARROW)){
         yOponenteRaquete -= yVelocidadeRaquete;
@@ -58,10 +59,7 @@ function movimentaRaquetePlayer2(){
 }
 
 function movimentaOponenteRaqueteAI(){
-
+  
         yVelocidadeOponenteRaqueteAI = yBolinha - yOponenteRaquete -alturaRaquete/2 -30;
         yOponenteRaquete += yVelocidadeOponenteRaqueteAI;
- 
-        
 }
-

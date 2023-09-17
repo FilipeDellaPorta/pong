@@ -19,7 +19,7 @@ function draw() {
     pararBolinha();
     movimentaRaquete();
     movimentaRaquetePlayer2();
-    //movimentaOponenteRaqueteAI();
+    movimentaOponenteRaqueteAI();
     verificaBolinhaColisaoBorda();
     //verificaColisaoRaquete();
     verificaColisaoRaqueteBiblioteca(xRaquete,yRaquete);
@@ -27,6 +27,5 @@ function draw() {
     mostraPlacar();
     marcaPontos();
     silenciaSons();
-
 }
 
