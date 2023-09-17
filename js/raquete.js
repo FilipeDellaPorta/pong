@@ -16,25 +16,25 @@ function mostraRaquete(x,y){
 }
 
 function movimentaRaquete(){
-    if(keyIsDown(UP_ARROW)){
+    if(keyIsDown(87)){
         yRaquete -= yVelocidadeRaquete;
     }
-    if(keyIsDown(DOWN_ARROW)){
+    if(keyIsDown(83)){
         yRaquete += yVelocidadeRaquete;
     }
     yRaquete = constrain(yRaquete,0,300);
 }
 
-function verificaColisaoRaquete(){
-    if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
-        velocidadeXBolinha *= -1;
-        tocaSom(raquetada, raquetadaTocando);
-    } 
-    if (xBolinha + raioBolinha > xOponenteRaquete && yBolinha - raioBolinha < yOponenteRaquete + alturaRaquete && yBolinha + raioBolinha > yOponenteRaquete){
-        velocidadeXBolinha *= -1;
-        tocaSom(raquetada, raquetadaTocando);
-    } 
-}
+// function verificaColisaoRaquete(){
+//     if (xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+//         velocidadeXBolinha *= -1;
+//         tocaSom(raquetada, raquetadaTocando);
+//     } 
+//     if (xBolinha + raioBolinha > xOponenteRaquete && yBolinha - raioBolinha < yOponenteRaquete + alturaRaquete && yBolinha + raioBolinha > yOponenteRaquete){
+//         velocidadeXBolinha *= -1;
+//         tocaSom(raquetada, raquetadaTocando);
+//     } 
+// }
 
 
 
@@ -48,10 +48,10 @@ function verificaColisaoRaqueteBiblioteca(x,y){
 }
 
 function movimentaRaquetePlayer2(){
-    if(keyIsDown(87)){
+    if(keyIsDown(UP_ARROW)){
         yOponenteRaquete -= yVelocidadeRaquete;
     }
-    if(keyIsDown(83)){
+    if(keyIsDown(DOWN_ARROW)){
         yOponenteRaquete += yVelocidadeRaquete;
     }
     yOponenteRaquete = constrain (yOponenteRaquete, 0, 300);

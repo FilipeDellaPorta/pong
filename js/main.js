@@ -18,8 +18,8 @@ function draw() {
     bolinhaPresa();
     pararBolinha();
     movimentaRaquete();
-    //movimentaRaquetePlayer2();
-   // movimentaOponenteRaqueteAI();
+    movimentaRaquetePlayer2();
+    //movimentaOponenteRaqueteAI();
     verificaBolinhaColisaoBorda();
     //verificaColisaoRaquete();
     verificaColisaoRaqueteBiblioteca(xRaquete,yRaquete);
