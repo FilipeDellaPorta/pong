@@ -16,10 +16,10 @@ function mostraRaquete(x,y){
 }
 
 function movimentaRaquete(){
-    if(keyIsDown(87)){
+    if(keyIsDown(87) || keyIsDown(68)){
         yRaquete -= yVelocidadeRaquete;
     }
-    if(keyIsDown(83)){
+    if(keyIsDown(83) || keyIsDown(65)){
         yRaquete += yVelocidadeRaquete;
     }
     yRaquete = constrain(yRaquete,0,300);
