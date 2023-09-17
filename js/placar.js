@@ -26,10 +26,10 @@ function mostraPlacar(){
 function marcaPontos(){
     if (xBolinha > 591){
         meusPontos += 1;
-        tocaPonto();
+        tocaSom(ponto, pontoTocando);
     }
     if (xBolinha < 9){
         oponentePontos +=1;
-        tocaPonto();
+        tocaSom(ponto, pontoTocando);
     }
 }
