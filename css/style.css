@@ -2,8 +2,12 @@
 :root {
   --cor-primaria: #5C8EFA;
   --cor-secundaria: #2F56AD;
-  --cot-terciaria: #BAFA43;
+  --cor-terciaria: #BAFA43;
   --cor-quartenaria: #FF2D14;
+
+  /*cada 1em sao 16px*/
+  --fonte-grande: 2.25em; 
+  --fonte-pequena: 1em;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -25,7 +29,28 @@ body {
     color: var(--cor-secundaria);
   }
 
-strong {
+.destaque-tecla {
   color: var(--cor-quartenaria);
 }
  
+/*usando o flexbox no elemento pai*/
+.conteiner {
+  display: flex;
+  flex-direction: row-reverse;/*define a direcao do alinhamento dos itens*/
+  align-items: center; /*alinha a altura dos itens em relacao a eles proprios */
+  justify-content: space-between;
+}
+
+.conteiner__secao {
+  margin: 8%; /*criado margem para afastar texto da borda direita da pagina*/
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__secao__titulo {
+  font-size: var(--fonte-grande);
+}
+
+.conteiner__secao__paragrafo {
+  font-size: var(--fonte-pequena);
+}
