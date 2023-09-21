@@ -6,7 +6,7 @@ function preload(){
 
 function setup() {
     createCanvas (600, 400);
-    //tocaTrilha();
+    trilha.loop();
 }
 
 function draw() {
@@ -27,5 +27,6 @@ function draw() {
     mostraPlacar();
     marcaPontos();
     silenciaSons();
+    reativaSons();
 }
 

@@ -9,13 +9,6 @@ let raquetadaTocando = true;
 
 //tocando os sons do jogo
 
-function tocaTrilha(){
-    if(!trilhaTocando){
-        return;
-    }
-    trilha.loop();
-}
-
 function tocaSom(som, ativo){
     if (ativo) {
          som.play();
@@ -28,8 +21,16 @@ function tocaSom(som, ativo){
         trilhaTocando = false;
         pontoTocando = false;
         raquetadaTocando = false;
-        trilha.stop();
+        trilha.pause();
         ponto.stop();
         raquetada.stop();
      } 
+}
+
+function reativaSons(){
+    if(keyIsDown(78)){
+        trilhaTocando = true;
+        pontoTocando = true;
+        raquetadaTocando = true;
+    }
 }
