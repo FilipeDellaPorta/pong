@@ -5,8 +5,10 @@
   --cor-texto-principal: #F4D35E;
   --cor-texto-secundario: #FAF0CA;
   --cor-texto-trecho: #F95738;
-  --cor-fundo-botao: ;
-  --cor-texto-botao: ;
+  --cor-fundo-botao: #539feb;
+  --cor-fundo-botao-hover: #ABD2FA;
+  --cor-texto-botao: #F4FAFF;
+
 
   /*cada 1em sao 16px*/
   --fonte-grande: 2.25em; 
@@ -84,9 +86,12 @@ body {
 
 .conteiner__secao__botao{
   text-decoration: none;
+  text-align: center;
+  border-radius: 1em;
+  padding: 1em;
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-pesada);
-  color: var(--cor-terciaria);
-  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-botao);
+  background-color: var(--cor-fundo-botao);
 }
