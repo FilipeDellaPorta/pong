@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
 /* criar variaveis no css para evitar repeticao e fcilitar altracoes no estilo */
 :root {
-  --cor-primaria: #5C8EFA;
-  --cor-secundaria: #2F56AD;
-  --cor-terciaria: #BAFA43;
-  --cor-quartenaria: #FF2D14;
+  --cor-fundo-tela: #0D3B66;
+  --cor-texto-principal: #F4D35E;
+  --cor-texto-secundario: #FAF0CA;
+  --cor-texto-trecho: #F95738;
+  --cor-fundo-botao: ;
+  --cor-texto-botao: ;
 
   /*cada 1em sao 16px*/
   --fonte-grande: 2.25em; 
-  --fonte-pequena: 1em;
+  --fonte-pequena: 1.5em;
+
+  --font-principal: 'Roboto', sans-serif;
+  --font-secundaria: 'Roboto', sans-serif;
+
+  --font-pesada: 900;
+  --font-leve: 300;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -25,12 +34,11 @@ canvas {
 body {
     height: 100vh; /*usar o espaco total da pgina*/
     box-sizing: border-box; /*evitar que elementos filho `vazem` para fora dos elementos pai*/
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    background-color: var(--cor-fundo-tela);
   }
 
 .destaque-tecla {
-  color: var(--cor-quartenaria);
+  color: var(--cor-texto-trecho);
 }
  
 /*usando o flexbox no elemento pai*/
@@ -42,15 +50,43 @@ body {
 }
 
 .conteiner__secao {
-  margin: 8%; /*criado margem para afastar texto da borda direita da pagina*/
+  margin: 0 2%; /*criado margem para afastar texto da borda direita da pagina*/
   display: flex;
   flex-direction: column;
+  gap: 2em;
+}
+
+.conteiner__secao__divisao__texto{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .conteiner__secao__titulo {
   font-size: var(--fonte-grande);
+  font-family: var(--font-principal);
+  font-weight: var(--font-pesada);
+  text-align: center;
+  color: var(--cor-texto-principal);
 }
 
 .conteiner__secao__paragrafo {
   font-size: var(--fonte-pequena);
+  font-family: var(--font-secundaria);
+  font-weight: var(--font-leve);
+  color: var(--cor-texto-secundario);
+}
+
+.conteiner__secao__divisao__botao{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteiner__secao__botao{
+  text-decoration: none;
+  font-size: var(--fonte-pequena);
+  font-family: var(--font-secundaria);
+  font-weight: var(--font-pesada);
+  color: var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
 }
