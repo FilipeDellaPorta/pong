@@ -30,6 +30,7 @@
   --preenchimento-dos-botoes: 1em;
   --espacamento-entre-os-botoes: space-evenly;
   --decoracao-do-texto-dos-botoes: none;
+  --alinhamento-botoes-e-paragrafo: center;
 
   /*alinhamentos*/
   --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
@@ -54,6 +55,7 @@ canvas {
 
 
 body {
+    /* line-height: 1; */
     height: var(--usando-espaco-total-da-pagina);
     box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
     background-color: var(--cor-fundo-tela);
@@ -101,6 +103,7 @@ body {
 .principal__conteudo__divisao__botao{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-os-botoes);
+  align-items: var(--alinhamento-botoes-e-paragrafo);
 }
 
 .principal__conteudo__botao{
@@ -112,4 +115,11 @@ body {
   font-weight: var(--font-pesada);
   color: var(--cor-texto-botao);
   background-color: var(--cor-fundo-botao);
+}
+
+.principal__conteudo__botao__paragrafo{
+  font-size: var(--fonte-pequena);
+  font-family: var(--font-secundaria);
+  font-weight: var(--font-leve);
+  color: var(--cor-texto-secundario);
 }
