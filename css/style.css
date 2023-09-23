@@ -19,6 +19,16 @@
 
   --font-pesada: 900;
   --font-leve: 300;
+
+  --gap-entre-texto-e-botoes: 1em;
+  --gap-entre-texto-e-texto: 1em;
+
+  --borda-dos-botoes: 1em;
+  --preenchimento-dos-botoes: 1em;
+
+  --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
+  --usando-espaco-total-da-pagina: 100vh;
+  --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -34,8 +44,8 @@ canvas {
 
 
 body {
-    height: 100vh; /*usar o espaco total da pgina*/
-    box-sizing: border-box; /*evitar que elementos filho `vazem` para fora dos elementos pai*/
+    height: var(--usando-espaco-total-da-pagina);
+    box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
     background-color: var(--cor-fundo-tela);
   }
 
@@ -43,28 +53,28 @@ body {
   color: var(--cor-texto-trecho);
 }
  
-/*usando o flexbox no elemento pai*/
-.conteiner {
+
+.principal {
   display: flex;
-  flex-direction: row-reverse;/*define a direcao do alinhamento dos itens*/
-  align-items: center; /*alinha a altura dos itens em relacao a eles proprios */
+  flex-direction: row-reverse;
+  align-items: center; 
   justify-content: space-between;
 }
 
-.conteiner__secao {
-  margin: 0 2%; /*criado margem para afastar texto da borda direita da pagina*/
+.principal__conteudo {
+  margin: var(--margem-do-conteudo-em-relacao-ao-jogo);
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: var(--gap-entre-texto-e-botoes);
 }
 
-.conteiner__secao__divisao__texto{
+.principal__conteudo__divisao__texto{
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: var(--gap-entre-texto-e-texto);
 }
 
-.conteiner__secao__titulo {
+.principal__conteudo__titulo {
   font-size: var(--fonte-grande);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
@@ -72,23 +82,23 @@ body {
   color: var(--cor-texto-principal);
 }
 
-.conteiner__secao__paragrafo {
+.principal__conteudo__paragrafo {
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-secundario);
 }
 
-.conteiner__secao__divisao__botao{
+.principal__conteudo__divisao__botao{
   display: flex;
   justify-content: space-evenly;
 }
 
-.conteiner__secao__botao{
+.principal__conteudo__botao{
   text-decoration: none;
   text-align: center;
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: var(--borda-dos-botoes);
+  padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-pesada);
