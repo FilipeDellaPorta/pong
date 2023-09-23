@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
-/* criar variaveis no css para evitar repeticao e facilitar alteracoes no estilo */
+
 :root {
+  /*corpo*/
+  --usando-espaco-total-da-pagina: 100vh;
+  --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
+
+  /*cores*/
   --cor-fundo-tela: #0D3B66;
   --cor-texto-principal: #F4D35E;
   --cor-texto-secundario: #FAF0CA;
@@ -9,8 +14,7 @@
   --cor-fundo-botao-hover: #ABD2FA;
   --cor-texto-botao: #F4FAFF;
 
-
-  /*cada 1em sao 16px*/
+  /*fontes e estilos (1em = 16px)*/
   --fonte-grande: 2.25em; 
   --fonte-pequena: 1.5em;
 
@@ -20,15 +24,22 @@
   --font-pesada: 900;
   --font-leve: 300;
 
+  /*botoes*/
   --gap-entre-texto-e-botoes: 1em;
-  --gap-entre-texto-e-texto: 1em;
-
   --borda-dos-botoes: 1em;
   --preenchimento-dos-botoes: 1em;
+  --espacamento-entre-os-botoes: space-evenly;
+  --decoracao-do-texto-dos-botoes: none;
 
+  /*alinhamentos*/
   --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
-  --usando-espaco-total-da-pagina: 100vh;
-  --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
+  --gap-entre-texto-e-texto: 1em;
+  --conteiner-flexivel: flex;
+  --alinhamento-texto-e-texto-em-coluna: column;
+  --alinhamento-texto-e-botoes-em-coluna: column;
+  --alinhamento-do-jogo-e-texto-em-linha-reverso: row-reverse;
+  --espaco-entre-o-jogo-e-o-texto: space-between;
+  --centralizando-o-titulo: center;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -37,7 +48,6 @@
   padding: 0;
 }
 
-/* este etilo refere-se ao canvas e estava assim no editor p5j */
 canvas {
   display: block;
 }
@@ -55,22 +65,21 @@ body {
  
 
 .principal {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; 
-  justify-content: space-between;
+  display: var(--conteiner-flexivel);
+  flex-direction: var(--alinhamento-do-jogo-e-texto-em-linha-reverso);
+  justify-content: var(--espaco-entre-o-jogo-e-o-texto);
 }
 
 .principal__conteudo {
   margin: var(--margem-do-conteudo-em-relacao-ao-jogo);
-  display: flex;
-  flex-direction: column;
+  display: var(--conteiner-flexivel);
+  flex-direction: var(--alinhamento-texto-e-botoes-em-coluna);
   gap: var(--gap-entre-texto-e-botoes);
 }
 
 .principal__conteudo__divisao__texto{
-  display: flex;
-  flex-direction: column;
+  display: var(--conteiner-flexivel);
+  flex-direction: var(--alinhamento-texto-e-texto-em-coluna);
   gap: var(--gap-entre-texto-e-texto);
 }
 
@@ -78,7 +87,7 @@ body {
   font-size: var(--fonte-grande);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
-  text-align: center;
+  text-align: var(--centralizando-o-titulo);
   color: var(--cor-texto-principal);
 }
 
@@ -90,13 +99,12 @@ body {
 }
 
 .principal__conteudo__divisao__botao{
-  display: flex;
-  justify-content: space-evenly;
+  display: var(--conteiner-flexivel);
+  justify-content: var(--espacamento-entre-os-botoes);
 }
 
 .principal__conteudo__botao{
-  text-decoration: none;
-  text-align: center;
+  text-decoration: var(--decoracao-do-texto-dos-botoes);
   border-radius: var(--borda-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
