@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
-/* criar variaveis no css para evitar repeticao e fcilitar altracoes no estilo */
+/* criar variaveis no css para evitar repeticao e facilitar alteracoes no estilo */
 :root {
   --cor-fundo-tela: #0D3B66;
   --cor-texto-principal: #F4D35E;
