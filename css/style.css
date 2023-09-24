@@ -121,5 +121,5 @@ body {
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
-  color: var(--cor-texto-secundario);
+  color: var(--cor-texto-principal);
 }
