@@ -103,13 +103,13 @@ body{
   color: var(--cor-texto-secundario);
 }
 
-.principal__conteudo__links{
+.principal__conteudo__ancoras{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-os-botoes);
   align-items: var(--alinhamento-botoes-e-paragrafo);
 }
 
-.principal__conteudo__links__botao{
+.principal__conteudo__ancoras__botao{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--centralizando-logotipo-e-texto-do-botao);
   gap: var(--espacamento-entre-logotipo-e-texto-do-botao);
@@ -124,13 +124,13 @@ body{
   background-color: var(--cor-fundo-botao);
 }
 
-.principal__conteudo__links__paragrafo{
+.principal__conteudo__ancoras__paragrafo{
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-principal);
 }
 
-.principal__conteudo__links__botao:hover{
+.principal__conteudo__ancoras__botao:hover{
   background-color: var(--cor-fundo-botao-hover);
 }
