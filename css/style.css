@@ -31,6 +31,9 @@
   --espacamento-entre-os-botoes: space-evenly;
   --decoracao-do-texto-dos-botoes: none;
   --alinhamento-botoes-e-paragrafo: center;
+  --centralizando-logotipo-e-texto-do-botao: center;
+  --espacamento-entre-logotipo-e-texto-do-botao: 0.5em;
+  --alinhamento-logotipo-e-texto-do-botao: center;
 
   /*alinhamentos*/
   --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
@@ -107,6 +110,10 @@ body {
 }
 
 .principal__conteudo__botao{
+  display: var(--conteiner-flexibilidade);
+  justify-content: var(--centralizando-logotipo-e-texto-do-botao);
+  gap: var(--espacamento-entre-logotipo-e-texto-do-botao);
+  align-items: var(--alinhamento-logotipo-e-texto-do-botao);
   text-decoration: var(--decoracao-do-texto-dos-botoes);
   border-radius: var(--borda-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
@@ -122,4 +129,8 @@ body {
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-principal);
+}
+
+.principal__conteudo__botao:hover {
+  background-color: var(--cor-fundo-botao-hover);
 }
