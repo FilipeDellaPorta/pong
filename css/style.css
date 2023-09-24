@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
 
-:root {
+:root{
   /*corpo*/
   --usando-espaco-total-da-pagina: 100vh;
   --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
@@ -47,48 +47,48 @@
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
-* {
+*{
   margin: 0;  
   padding: 0;
 }
 
-canvas {
+canvas{
   display: block;
 }
 
 
-body {
+body{
     /* line-height: 1; */
     height: var(--usando-espaco-total-da-pagina);
     box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
     background-color: var(--cor-fundo-tela);
   }
 
-.destaque-tecla {
+.destaque-texto{
   color: var(--cor-texto-trecho);
 }
  
 
-.principal {
+.principal{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-do-jogo-e-texto);
   justify-content: var(--espaco-entre-o-jogo-e-o-texto);
 }
 
-.principal__conteudo {
+.principal__conteudo{
   margin: var(--margem-do-conteudo-em-relacao-ao-jogo);
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-texto-e-botoes);
   gap: var(--gap-entre-texto-e-botoes);
 }
 
-.principal__conteudo__divisao__texto{
+.principal__conteudo__texto{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-texto-e-texto);
   gap: var(--gap-entre-texto-e-texto);
 }
 
-.principal__conteudo__titulo {
+.principal__conteudo__texto__titulo{
   font-size: var(--fonte-grande);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
@@ -96,20 +96,20 @@ body {
   color: var(--cor-texto-principal);
 }
 
-.principal__conteudo__paragrafo {
+.principal__conteudo__texto__paragrafo{
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-secundario);
 }
 
-.principal__conteudo__divisao__botao{
+.principal__conteudo__links{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-os-botoes);
   align-items: var(--alinhamento-botoes-e-paragrafo);
 }
 
-.principal__conteudo__botao{
+.principal__conteudo__links__botao{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--centralizando-logotipo-e-texto-do-botao);
   gap: var(--espacamento-entre-logotipo-e-texto-do-botao);
@@ -124,13 +124,13 @@ body {
   background-color: var(--cor-fundo-botao);
 }
 
-.principal__conteudo__botao__paragrafo{
+.principal__conteudo__links__paragrafo{
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-principal);
 }
 
-.principal__conteudo__botao:hover {
+.principal__conteudo__links__botao:hover{
   background-color: var(--cor-fundo-botao-hover);
 }
