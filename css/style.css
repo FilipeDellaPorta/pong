@@ -46,7 +46,7 @@
   --espacamento-entre-os-botoes: space-evenly;
 
   /*preenchimentos*/
-  --borda-dos-botoes: 1em;
+  --borda-do-preenchimento: 1em;
   --preenchimento-dos-botoes: 1em;
   --preenchimento-rodape: 0.5em;
 }
@@ -120,7 +120,7 @@ body{
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
   align-items: var(--alinhamento-logotipo-e-texto-do-botao);
   text-decoration: var(--decoracao-do-texto-dos-botoes);
-  border-radius: var(--borda-dos-botoes);
+  border-radius: var(--borda-do-preenchimento);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
