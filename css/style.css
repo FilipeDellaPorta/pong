@@ -43,7 +43,7 @@
   /*espacamentos*/
   --espacamento-entre-jogo-e-texto: space-between;
   --espacamento-entre-os-botoes: space-evenly;
-  --espacamento-entre-logotipo-e-texto-do-botao: center;
+  --espacamento-entre-logotipo-e-texto-do-botao: space-between;
   --espacamento-entre-cabecalho-e-topo: 2%;
   --espacamento-entre-principal-e-laterais: 0 2.5%;
   --espacamento-entre-conteudo-e-jogo: 0 2%;
