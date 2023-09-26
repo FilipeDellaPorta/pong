@@ -3,7 +3,6 @@
 :root{
   /*corpo*/
   --usando-espaco-total-da-pagina: 100vh;
-  --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
   --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
   --conteiner-flexibilidade: flex;
 
@@ -17,7 +16,7 @@
   --cor-de-texto-dentro-do-preenchimento: #F4FAFF;
 
   /*fontes e estilos (1em = 16px)*/
-  --fonte-grande: 2.25em; 
+  --fonte-grande: 1.5em; 
   --fonte-pequena: 1.5em;
 
   --font-principal: 'Roboto', sans-serif;
@@ -44,6 +43,9 @@
   /*espacamentos*/
   --espacamento-entre-o-jogo-e-o-texto: space-between;
   --espacamento-entre-os-botoes: space-evenly;
+  --espacamento-do-cabecalho-em-relacao-ao-topo: 2%;
+  --espacamento-do-principal-em-relacao-as-laterais: 0 2.5%;
+  --espacamento-do-conteudo-em-relacao-ao-jogo: 0 2%;
 
   /*preenchimentos*/
   --borda-do-preenchimento: 1em;
@@ -73,15 +75,24 @@ body{
   color: var(--cor-texto-destaque);
 }
  
+.cabecalho{
+  padding: var(--espacamento-do-cabecalho-em-relacao-ao-topo);
+  font-size: var(--fonte-grande);
+  font-family: var(--font-principal);
+  font-weight: var(--font-pesada);
+  text-align: var(--alinhamento-de-texto);
+  color: var(--cor-texto-principal);
+}
 
 .principal{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-do-jogo-e-texto);
   justify-content: var(--espacamento-entre-o-jogo-e-o-texto);
+  padding: var(--espacamento-do-principal-em-relacao-as-laterais);
 }
 
 .principal__conteudo{
-  margin: var(--margem-do-conteudo-em-relacao-ao-jogo);
+  padding: var(--espacamento-do-conteudo-em-relacao-ao-jogo);
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-texto-e-botoes);
   gap: var(--gap-entre-texto-e-botoes);
@@ -91,14 +102,6 @@ body{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-texto-e-texto);
   gap: var(--gap-entre-texto-e-texto);
-}
-
-.principal__conteudo__texto__titulo{
-  font-size: var(--fonte-grande);
-  font-family: var(--font-principal);
-  font-weight: var(--font-pesada);
-  text-align: var(--alinhamento-de-texto);
-  color: var(--cor-texto-principal);
 }
 
 .principal__conteudo__texto__paragrafo{
