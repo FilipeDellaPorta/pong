@@ -25,7 +25,7 @@
   --font-pesada: 900;
   --font-leve: 300;
 
-  --decoracao-do-texto-dos-botoes: none;
+  --decoracao-texto-dos-botoes: none;
 
   /*gaps*/
   --gap-entre-texto-e-botoes: 1.5em;
@@ -33,22 +33,23 @@
   --gap-entre-logotipo-e-texto-do-botao: 0.5em;
 
   /*alinhamentos*/
-  --alinhamento-do-jogo-e-texto: row-reverse;
-  --alinhamento-texto-e-botoes: column;
-  --alinhamento-texto-e-texto: column;
+  --alinhamento-entre-jogo-e-texto: row-reverse;
+  --alinhamento-entre-texto-e-botoes: column;
+  --alinhamento-entre-texto-e-texto: column;
   --alinhamento-de-texto: center;
-  --alinhamento-logotipo-e-texto-do-botao: center;
-  --alinhamento-botoes-e-paragrafo: center;
+  --alinhamento-entre-logotipo-e-texto-do-botao: center;
+  --alinhamento-entre-botoes-e-paragrafo: center;
  
   /*espacamentos*/
-  --espacamento-entre-o-jogo-e-o-texto: space-between;
+  --espacamento-entre-jogo-e-texto: space-between;
   --espacamento-entre-os-botoes: space-evenly;
-  --espacamento-do-cabecalho-em-relacao-ao-topo: 2%;
-  --espacamento-do-principal-em-relacao-as-laterais: 0 2.5%;
-  --espacamento-do-conteudo-em-relacao-ao-jogo: 0 2%;
+  --espacamento-entre-logotipo-e-texto-do-botao: center;
+  --espacamento-entre-cabecalho-e-topo: 2%;
+  --espacamento-entre-principal-e-laterais: 0 2.5%;
+  --espacamento-entre-conteudo-e-jogo: 0 2%;
 
   /*preenchimentos*/
-  --borda-do-preenchimento: 1em;
+  --borda-preenchimento-dos-botoes: 1em;
   --preenchimento-dos-botoes: 1em;
   --preenchimento-rodape: 0.5em;
 }
@@ -76,7 +77,7 @@ body{
 }
  
 .cabecalho{
-  padding: var(--espacamento-do-cabecalho-em-relacao-ao-topo);
+  padding: var(--espacamento-entre-cabecalho-e-topo);
   font-size: var(--fonte-grande);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
@@ -86,21 +87,21 @@ body{
 
 .principal{
   display: var(--conteiner-flexibilidade);
-  flex-direction: var(--alinhamento-do-jogo-e-texto);
-  justify-content: var(--espacamento-entre-o-jogo-e-o-texto);
-  padding: var(--espacamento-do-principal-em-relacao-as-laterais);
+  flex-direction: var(--alinhamento-entre-jogo-e-texto);
+  justify-content: var(--espacamento-entre-jogo-e-texto);
+  padding: var(--espacamento-entre-principal-e-laterais);
 }
 
 .principal__conteudo{
-  padding: var(--espacamento-do-conteudo-em-relacao-ao-jogo);
+  padding: var(--espacamento-entre-conteudo-e-jogo);
   display: var(--conteiner-flexibilidade);
-  flex-direction: var(--alinhamento-texto-e-botoes);
+  flex-direction: var(--alinhamento-entre-texto-e-botoes);
   gap: var(--gap-entre-texto-e-botoes);
 }
 
 .principal__conteudo__texto{
   display: var(--conteiner-flexibilidade);
-  flex-direction: var(--alinhamento-texto-e-texto);
+  flex-direction: var(--alinhamento-entre-texto-e-texto);
   gap: var(--gap-entre-texto-e-texto);
 }
 
@@ -114,16 +115,16 @@ body{
 .principal__conteudo__ancoras{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-os-botoes);
-  align-items: var(--alinhamento-botoes-e-paragrafo);
+  align-items: var(--alinhamento-entre-botoes-e-paragrafo);
 }
 
 .principal__conteudo__ancoras__botao{
   display: var(--conteiner-flexibilidade);
-  justify-content: var(--alinhamento-logotipo-e-texto-do-botao);
+  justify-content: var(--espacamento-entre-logotipo-e-texto-do-botao);
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
-  align-items: var(--alinhamento-logotipo-e-texto-do-botao);
-  text-decoration: var(--decoracao-do-texto-dos-botoes);
-  border-radius: var(--borda-do-preenchimento);
+  align-items: var(--alinhamento-entre-logotipo-e-texto-do-botao); 
+  text-decoration: var(--decoracao-texto-dos-botoes);
+  border-radius: var(--borda-preenchimento-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
