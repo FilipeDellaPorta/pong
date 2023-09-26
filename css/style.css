@@ -3,16 +3,18 @@
 :root{
   /*corpo*/
   --usando-espaco-total-da-pagina: 100vh;
+  --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
   --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
+  --conteiner-flexibilidade: flex;
 
   /*cores*/
   --cor-fundo-tela: #0D3B66;
   --cor-texto-principal: #F4D35E;
   --cor-texto-secundario: #FAF0CA;
-  --cor-texto-trecho: #F95738;
-  --cor-fundo-preenchimento: #539feb;
-  --cor-fundo-preenchimento-hover: #ABD2FA;
-  --cor-de-texto-dentro-de-preenchimento: #F4FAFF;
+  --cor-texto-destaque: #F95738;
+  --cor-preenchimento: #539feb;
+  --cor-efeito-hover: #ABD2FA;
+  --cor-de-texto-dentro-do-preenchimento: #F4FAFF;
 
   /*fontes e estilos (1em = 16px)*/
   --fonte-grande: 2.25em; 
@@ -24,26 +26,29 @@
   --font-pesada: 900;
   --font-leve: 300;
 
-  /*botoes*/
-  --gap-entre-texto-e-botoes: 1.5em;
-  --borda-dos-botoes: 1em;
-  --preenchimento-dos-botoes: 1em;
-  --espacamento-entre-os-botoes: space-evenly;
   --decoracao-do-texto-dos-botoes: none;
-  --alinhamento-botoes-e-paragrafo: center;
-  --centralizando-logotipo-e-texto-do-botao: center;
-  --espacamento-entre-logotipo-e-texto-do-botao: 0.5em;
-  --alinhamento-logotipo-e-texto-do-botao: center;
+
+  /*gaps*/
+  --gap-entre-texto-e-botoes: 1.5em;
+  --gap-entre-texto-e-texto: 1em;
+  --gap-entre-logotipo-e-texto-do-botao: 0.5em;
 
   /*alinhamentos*/
-  --margem-do-conteudo-em-relacao-ao-jogo: 0 2%;
-  --gap-entre-texto-e-texto: 1em;
-  --conteiner-flexibilidade: flex;
-  --alinhamento-texto-e-texto: column;
-  --alinhamento-texto-e-botoes: column;
   --alinhamento-do-jogo-e-texto: row-reverse;
-  --espaco-entre-o-jogo-e-o-texto: space-between;
-  --centralizando-o-titulo: center;
+  --alinhamento-texto-e-botoes: column;
+  --alinhamento-texto-e-texto: column;
+  --alinhamento-de-texto: center;
+  --alinhamento-logotipo-e-texto-do-botao: center;
+  --alinhamento-botoes-e-paragrafo: center;
+ 
+  /*espacamentos*/
+  --espacamento-entre-o-jogo-e-o-texto: space-between;
+  --espacamento-entre-os-botoes: space-evenly;
+
+  /*preenchimentos*/
+  --borda-dos-botoes: 1em;
+  --preenchimento-dos-botoes: 1em;
+  --preenchimento-rodape: 0.5em;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -65,14 +70,14 @@ body{
   }
 
 .destaque-texto{
-  color: var(--cor-texto-trecho);
+  color: var(--cor-texto-destaque);
 }
  
 
 .principal{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-do-jogo-e-texto);
-  justify-content: var(--espaco-entre-o-jogo-e-o-texto);
+  justify-content: var(--espacamento-entre-o-jogo-e-o-texto);
 }
 
 .principal__conteudo{
@@ -92,7 +97,7 @@ body{
   font-size: var(--fonte-grande);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
-  text-align: var(--centralizando-o-titulo);
+  text-align: var(--alinhamento-de-texto);
   color: var(--cor-texto-principal);
 }
 
@@ -111,8 +116,8 @@ body{
 
 .principal__conteudo__ancoras__botao{
   display: var(--conteiner-flexibilidade);
-  justify-content: var(--centralizando-logotipo-e-texto-do-botao);
-  gap: var(--espacamento-entre-logotipo-e-texto-do-botao);
+  justify-content: var(--alinhamento-logotipo-e-texto-do-botao);
+  gap: var(--gap-entre-logotipo-e-texto-do-botao);
   align-items: var(--alinhamento-logotipo-e-texto-do-botao);
   text-decoration: var(--decoracao-do-texto-dos-botoes);
   border-radius: var(--borda-dos-botoes);
@@ -120,8 +125,8 @@ body{
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-pesada);
-  color: var(--cor-de-texto-dentro-de-preenchimento);
-  background-color: var(--cor-fundo-preenchimento);
+  color: var(--cor-de-texto-dentro-do-preenchimento);
+  background-color: var(--cor-preenchimento);
 }
 
 .principal__conteudo__ancoras__paragrafo{
@@ -132,15 +137,23 @@ body{
 }
 
 .principal__conteudo__ancoras__botao:hover{
-  background-color: var(--cor-fundo-preenchimento-hover);
+  background-color: var(--cor-efeito-hover);
 }
 
-.rodape{
+footer{
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%; 
+/*jogando o footer para o fim do body*/
+}
 
+.rodape{
+  padding: var(--preenchimento-rodape);
   color: var(--cor-texto-secundario);
-  background-color: var(--cor-fundo-preenchimento);
+  background-color: var(--cor-preenchimento);
+  text-align: var(--alinhamento-de-texto);
+  font-family: var(--font-principal);
+  font-weight: var(--font-pesada);
+  font-size: var(--fonte-pequena);
 }
