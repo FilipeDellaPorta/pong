@@ -10,9 +10,9 @@
   --cor-texto-principal: #F4D35E;
   --cor-texto-secundario: #FAF0CA;
   --cor-texto-trecho: #F95738;
-  --cor-fundo-botao: #539feb;
-  --cor-fundo-botao-hover: #ABD2FA;
-  --cor-texto-botao: #F4FAFF;
+  --cor-fundo-preenchimento: #539feb;
+  --cor-fundo-preenchimento-hover: #ABD2FA;
+  --cor-de-texto-dentro-de-preenchimento: #F4FAFF;
 
   /*fontes e estilos (1em = 16px)*/
   --fonte-grande: 2.25em; 
@@ -120,8 +120,8 @@ body{
   font-size: var(--fonte-pequena);
   font-family: var(--font-secundaria);
   font-weight: var(--font-pesada);
-  color: var(--cor-texto-botao);
-  background-color: var(--cor-fundo-botao);
+  color: var(--cor-de-texto-dentro-de-preenchimento);
+  background-color: var(--cor-fundo-preenchimento);
 }
 
 .principal__conteudo__ancoras__paragrafo{
@@ -132,5 +132,15 @@ body{
 }
 
 .principal__conteudo__ancoras__botao:hover{
-  background-color: var(--cor-fundo-botao-hover);
+  background-color: var(--cor-fundo-preenchimento-hover);
+}
+
+.rodape{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  color: var(--cor-texto-secundario);
+  background-color: var(--cor-fundo-preenchimento);
 }
