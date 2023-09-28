@@ -92,11 +92,11 @@ body{
   color: var(--cor-texto-principal);
 }
 
-.cabecalho__nav{
+.cabecalho__menu{
   align-self: var(--alinhamento-de-nav);
 }
 
-.cabecalho__nav__ancora{
+.cabecalho__menu__ancora{
   text-decoration: var(--decoracao-texto);
   font-size: var(--fonte-pequena);
   font-family: var(--font-principal);
