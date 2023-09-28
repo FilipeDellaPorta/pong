@@ -71,12 +71,8 @@ body{
     height: var(--usando-espaco-total-da-pagina);
     box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
     background-color: var(--cor-fundo-tela);
-  }
-
-.destaque-texto{
-  color: var(--cor-texto-destaque);
 }
- 
+
 .cabecalho{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-entre-texto-e-texto);
@@ -130,6 +126,10 @@ body{
   font-family: var(--font-secundaria);
   font-weight: var(--font-leve);
   color: var(--cor-texto-secundario);
+}
+
+.destaque-texto{
+  color: var(--cor-texto-destaque);
 }
 
 .principal__conteudo__ancoras{
