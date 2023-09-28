@@ -16,7 +16,7 @@
   --cor-de-texto-dentro-do-preenchimento: #F4FAFF;
 
   /*fontes e estilos (1em = 16px)*/
-  --fonte-grande: 1.5em; 
+  --fonte-grande: 2.5em; 
   --fonte-pequena: 1.5em;
 
   --font-principal: 'Roboto', sans-serif;
@@ -25,7 +25,7 @@
   --font-pesada: 900;
   --font-leve: 300;
 
-  --decoracao-texto-dos-botoes: none;
+  --decoracao-texto: none;
 
   /*gaps*/
   --gap-entre-texto-e-botoes: 1.5em;
@@ -37,6 +37,7 @@
   --alinhamento-entre-texto-e-botoes: column;
   --alinhamento-entre-texto-e-texto: column;
   --alinhamento-de-texto: center;
+  --alinhamento-de-nav: flex-end;
   --alinhamento-entre-logotipo-e-texto-do-botao: center;
   --alinhamento-entre-botoes-e-paragrafo: center;
  
@@ -77,8 +78,27 @@ body{
 }
  
 .cabecalho{
+  display: var(--conteiner-flexibilidade);
+  flex-direction: var(--alinhamento-entre-texto-e-texto);
   padding: var(--espacamento-entre-cabecalho-e-topo);
+}
+
+.cabecalho__titulo{
+  align-self: var(--alinhamento-de-texto);
   font-size: var(--fonte-grande);
+  font-family: var(--font-principal);
+  font-weight: var(--font-pesada);
+  text-align: var(--alinhamento-de-texto);
+  color: var(--cor-texto-principal);
+}
+
+.cabecalho__nav{
+  align-self: var(--alinhamento-de-nav);
+}
+
+.cabecalho__nav__ancora{
+  text-decoration: var(--decoracao-texto);
+  font-size: var(--fonte-pequena);
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
   text-align: var(--alinhamento-de-texto);
@@ -123,7 +143,7 @@ body{
   justify-content: var(--espacamento-entre-logotipo-e-texto-do-botao);
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
   align-items: var(--alinhamento-entre-logotipo-e-texto-do-botao); 
-  text-decoration: var(--decoracao-texto-dos-botoes);
+  text-decoration: var(--decoracao-texto);
   border-radius: var(--borda-preenchimento-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
