@@ -49,6 +49,7 @@
   --espacamento-entre-principal-e-laterais: 0 2.5%;
   --espacamento-entre-conteudo-e-jogo: 0 2%;
   --espacamento-entre-lista-e-ancoras: 0.5em;
+  --espacamento-entre-principal-e-rodape: 2.8em;
 
   /*preenchimentos*/
   --borda-preenchimento-dos-botoes: 1em;
@@ -168,15 +169,13 @@ body{
   background-color: var(--cor-efeito-hover);
 }
 
-footer{
-  position: fixed;
+.rodape{
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;  */
 /*jogando o footer para o fim do body*/
-}
-
-.rodape{
+  margin-top: var(--espacamento-entre-principal-e-rodape);
   padding: var(--preenchimento-rodape);
   color: var(--cor-texto-secundario);
   background-color: var(--cor-preenchimento);
