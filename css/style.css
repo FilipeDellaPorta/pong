@@ -48,11 +48,13 @@
   --espacamento-entre-cabecalho-e-topo: 2%;
   --espacamento-entre-principal-e-laterais: 0 2.5%;
   --espacamento-entre-conteudo-e-jogo: 0 2%;
+  --espacamento-entre-lista-e-ancoras: 0.5em;
 
   /*preenchimentos*/
   --borda-preenchimento-dos-botoes: 1em;
   --preenchimento-dos-botoes: 1em;
   --preenchimento-rodape: 0.5em;
+  --preenchimento-lista-ancoras: 0.2em;
 }
 
 /* zerar a margem a preenchimento por padrao de todos os elementos */
@@ -182,4 +184,23 @@ footer{
   font-family: var(--font-principal);
   font-weight: var(--font-pesada);
   font-size: var(--fonte-pequena);
+}
+
+.principal__lista{
+  display: var(--conteiner-flexibilidade);
+  flex-direction: var(--alinhamento-entre-texto-e-botoes);
+  gap: var(--gap-entre-texto-e-texto);
+  color: var(--cor-texto-secundario);
+  font-family: var(--font-secundaria);
+  font-size: var(--fonte-pequena);
+  padding: var(--espacamento-entre-principal-e-laterais);
+}
+
+.principal__lista__ancora{
+  text-decoration: var(--decoracao-texto);
+  color: var(--cor-de-texto-dentro-do-preenchimento);
+  padding: var(--preenchimento-lista-ancoras);
+  background-color: var(--cor-preenchimento);
+  border-radius: var(--borda-preenchimento-dos-botoes);
+  margin: var(--espacamento-entre-lista-e-ancoras);
 }
