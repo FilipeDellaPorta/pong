@@ -90,6 +90,8 @@ body{
 
 .cabecalho__menu{
   align-self: var(--alinhamento-de-nav);
+  display: var(--conteiner-flexibilidade);
+  gap: var(--gap-entre-texto-e-texto);
 }
 
 .cabecalho__menu__ancora{
