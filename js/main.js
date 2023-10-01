@@ -6,7 +6,7 @@ function preload(){
 
 function setup() {
     createCanvas (600, 400);
-    //trilha.loop();
+    //trilha.loop(); desativado para trabalhar em paz
 }
 
 function draw() {
