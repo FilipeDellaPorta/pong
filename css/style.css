@@ -113,6 +113,13 @@ body{
   padding: var(--espacamento-entre-principal-e-laterais);
 }
 
+.principal__sobre__mim{
+  display: var(--conteiner-flexibilidade);
+  flex-direction: var(--alinhamento-entre-texto-e-botoes);
+  padding: var(--espacamento-entre-principal-e-laterais);
+  gap: var(--gap-entre-texto-e-texto);
+}
+
 .principal__conteudo{
   padding: var(--espacamento-entre-conteudo-e-jogo);
   display: var(--conteiner-flexibilidade);
