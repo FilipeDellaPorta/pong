@@ -18,13 +18,10 @@
   /*fontes e estilos (1em = 16px)*/
   --fonte-grande: 2.5em; 
   --fonte-pequena: 1.5em;
-
   --font-principal: 'Roboto', sans-serif;
   --font-secundaria: 'Roboto', sans-serif;
-
   --font-pesada: 900;
   --font-leve: 300;
-
   --decoracao-texto: none;
 
   /*gaps*/
