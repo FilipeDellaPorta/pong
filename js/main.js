@@ -1,11 +1,16 @@
-function preload(){
+function preload() {
     trilha = loadSound("./assets/sounds/trilha.mp3");
     ponto = loadSound("./assets/sounds/ponto.mp3");
     raquetada = loadSound("./assets/sounds/raquetada.mp3");
 }
 
+let larguraTela;
+let alturaTela;
+
 function setup() {
-    createCanvas (600, 400);
+    let larguraTela = windowWidth/2;
+    let alturaTela = windowHeight/2;
+    createCanvas (larguraTela, alturaTela);
     //trilha.loop(); desativado para trabalhar em paz
 }
 
@@ -30,3 +35,9 @@ function draw() {
     reativaSons();
 }
 
+function windowResized() {
+    // Esta função é chamada sempre que a janela do navegador é redimensionada
+    larguraTela = windowWidth / 2;
+    alturaTela = windowHeight / 2;
+    resizeCanvas(larguraTela, alturaTela);
+}
