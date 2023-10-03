@@ -4,12 +4,12 @@ function preload() {
     raquetada = loadSound("./assets/sounds/raquetada.mp3");
 }
 
-let larguraTela;
-let alturaTela;
+let larguraTela = 600;
+let alturaTela = 400;
 
 function setup() {
-    let larguraTela = windowWidth/2;
-    let alturaTela = windowHeight/2;
+    // let larguraTela = windowWidth/2;
+    // let alturaTela = windowHeight/2;
     createCanvas (larguraTela, alturaTela);
     //trilha.loop(); desativado para trabalhar em paz
 }
@@ -35,9 +35,9 @@ function draw() {
     reativaSons();
 }
 
-function windowResized() {
-    // Esta função é chamada sempre que a janela do navegador é redimensionada
-    larguraTela = windowWidth / 2;
-    alturaTela = windowHeight / 2;
-    resizeCanvas(larguraTela, alturaTela);
-}
+// function windowResized() {
+//     // Esta função é chamada sempre que a janela do navegador é redimensionada
+//     larguraTela = windowWidth / 2;
+//     alturaTela = windowHeight / 2;
+//     resizeCanvas(larguraTela, alturaTela);
+// }
