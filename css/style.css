@@ -48,7 +48,7 @@
   --espacamento-entre-principal-e-rodape: 2.8em;
 
   /*preenchimentos*/
-  --borda-preenchimento-dos-botoes: 1em;
+  --arredondamento-dos-botoes: 1em;
   --preenchimento-dos-botoes: 1em;
   --preenchimento-rodape: 0.5em;
   --preenchimento-lista-ancoras: 0.2em;
@@ -156,7 +156,7 @@ body{
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
   align-items: var(--alinhamento-entre-logotipo-e-texto-do-botao); 
   text-decoration: var(--decoracao-texto);
-  border-radius: var(--borda-preenchimento-dos-botoes);
+  border-radius: var(--arredondamento-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
@@ -207,7 +207,7 @@ body{
   color: var(--cor-texto-secundario);
   padding: var(--preenchimento-lista-ancoras);
   background-color: var(--cor-preenchimento);
-  border-radius: var(--borda-preenchimento-dos-botoes);
+  border-radius: var(--arredondamento-dos-botoes);
   margin: var(--espacamento-entre-lista-e-ancoras);
 }
 
