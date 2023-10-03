@@ -13,7 +13,6 @@
   --cor-texto-destaque: #F95738;
   --cor-preenchimento: #539feb;
   --cor-efeito-hover: #ABD2FA;
-  --cor-de-texto-dentro-do-preenchimento: #F4FAFF;
 
   /*fontes e estilos (1em = 16px)*/
   --fonte-grande: 2.5em; 
@@ -162,7 +161,7 @@ body{
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
   font-weight: var(--fonte-pesada);
-  color: var(--cor-de-texto-dentro-do-preenchimento);
+  color: var(--cor-texto-secundario);
   background-color: var(--cor-preenchimento);
 }
 
@@ -205,7 +204,7 @@ body{
 
 .principal__certificado__ancora{
   text-decoration: var(--decoracao-texto);
-  color: var(--cor-de-texto-dentro-do-preenchimento);
+  color: var(--cor-texto-secundario);
   padding: var(--preenchimento-lista-ancoras);
   background-color: var(--cor-preenchimento);
   border-radius: var(--borda-preenchimento-dos-botoes);
