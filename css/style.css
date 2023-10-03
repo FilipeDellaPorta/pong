@@ -6,12 +6,11 @@
   --sem-vazamento-de-elementos-filhos-da-tag-pai: border-box;
   --conteiner-flexibilidade: flex;
 
-  --cor-fundo-tela: #0D3B66;
-  --cor-texto-principal: #F4D35E;
-  --cor-texto-secundario: #FAF0CA;
-  --cor-texto-destaque: #F95738;
-  --cor-preenchimento: #539feb;
-  --cor-efeito-hover: #ABD2FA;
+  --cor-de-fundo-de-tela: #0D3B66;
+  --cor-de-texto-principal: #F4D35E;
+  --cor-de-texto-secundario: #FAF0CA;
+  --cor-de-texto-destaque: #F95738;
+  --cor-de-fundo-de-tela-dois: #539feb;
 
   --fonte-grande: 2.5em; 
   --fonte-pequena: 1.5em;
@@ -42,6 +41,7 @@
   --espacamento-entre-lista-e-ancoras: 0.5em;
   --espacamento-entre-principal-e-rodape: 2.8em;
 
+  --borda-dos-botoes: 0.1em solid var(--cor-de-texto-secundario);
   --arredondamento-dos-botoes: 1em;
   --preenchimento-dos-botoes: 1em;
   --preenchimento-rodape: 0.5em;
@@ -61,7 +61,7 @@ canvas{
 body{
     height: var(--usando-espaco-total-da-pagina);
     box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
-    background-color: var(--cor-fundo-tela);
+    background-color: var(--cor-de-fundo-de-tela);
 }
 
 .cabecalho{
@@ -76,7 +76,7 @@ body{
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-pesada);
   text-align: var(--alinhamento-de-texto);
-  color: var(--cor-texto-principal);
+  color: var(--cor-de-texto-principal);
 }
 
 .cabecalho__menu{
@@ -91,11 +91,11 @@ body{
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-pesada);
   text-align: var(--alinhamento-de-texto);
-  color: var(--cor-texto-principal);
+  color: var(--cor-de-texto-principal);
 }
 
 .cabecalho__menu__ancora:hover{
-  color: var(--cor-texto-destaque);
+  color: var(--cor-de-texto-destaque);
 }
 
 .principal{
@@ -129,11 +129,11 @@ body{
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
   font-weight: var(--fonte-leve);
-  color: var(--cor-texto-secundario);
+  color: var(--cor-de-texto-secundario);
 }
 
 .destaque-texto{
-  color: var(--cor-texto-destaque);
+  color: var(--cor-de-texto-destaque);
 }
 
 .principal__conteudo__ancoras{
@@ -148,24 +148,24 @@ body{
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
   align-items: var(--alinhamento-entre-logotipo-e-texto-do-botao); 
   text-decoration: var(--decoracao-texto);
+  border: var(--borda-dos-botoes);
   border-radius: var(--arredondamento-dos-botoes);
   padding: var(--preenchimento-dos-botoes);
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
   font-weight: var(--fonte-pesada);
-  color: var(--cor-texto-secundario);
-  background-color: var(--cor-preenchimento);
+  color: var(--cor-de-texto-secundario);
 }
 
 .principal__conteudo__ancoras__paragrafo{
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
   font-weight: var(--fonte-leve);
-  color: var(--cor-texto-principal);
+  color: var(--cor-de-texto-principal);
 }
 
 .principal__conteudo__ancoras__botao:hover{
-  background-color: var(--cor-efeito-hover);
+  background-color: var(--cor-de-fundo-de-tela-dois);
 }
 
 .rodape{
@@ -176,8 +176,8 @@ body{
 /*jogando o footer para o fim do body*/
   margin-top: var(--espacamento-entre-principal-e-rodape);
   padding: var(--preenchimento-rodape);
-  color: var(--cor-texto-secundario);
-  background-color: var(--cor-preenchimento);
+  color: var(--cor-de-texto-secundario);
+  background-color: var(--cor-de-fundo-de-tela-dois);
   text-align: var(--alinhamento-de-texto);
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-pesada);
@@ -188,7 +188,7 @@ body{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-entre-texto-e-botoes);
   gap: var(--gap-entre-texto-e-texto);
-  color: var(--cor-texto-secundario);
+  color: var(--cor-de-texto-secundario);
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-pequena);
   padding: var(--espacamento-entre-principal-e-laterais);
@@ -196,13 +196,13 @@ body{
 
 .principal__certificado__ancora{
   text-decoration: var(--decoracao-texto);
-  color: var(--cor-texto-secundario);
+  color: var(--cor-de-texto-secundario);
   padding: var(--preenchimento-lista-ancoras);
-  background-color: var(--cor-preenchimento);
+  border: var(--borda-dos-botoes);
   border-radius: var(--arredondamento-dos-botoes);
   margin: var(--espacamento-entre-lista-e-ancoras);
 }
 
 .principal__certificado__ancora:hover{
-  background-color: var(--cor-efeito-hover);
+  background-color: var(--cor-de-fundo-de-tela-dois);
 }
