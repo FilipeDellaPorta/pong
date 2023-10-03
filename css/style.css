@@ -42,7 +42,8 @@
   --espacamento-entre-lista-e-ancoras: 0.5rem;
   --espacamento-entre-principal-e-rodape: 2.8rem;
 
-  --largura-dos-botoes: 8rem;
+  --largura-da-tela-seccao-conteudo: 50%;
+  --largura-dos-botoes: 6em;
   --borda-dos-botoes: 0.1rem solid var(--cor-de-texto-secundario);
   --arredondamento-dos-botoes: 1rem;
   --preenchimento-dos-botoes: 1rem;
@@ -112,6 +113,7 @@ body{
   display: var(--conteiner-flexibilidade);
   flex-direction: var(--alinhamento-entre-texto-e-botoes);
   gap: var(--gap-entre-texto-e-botoes);
+  width: var(--largura-da-tela-seccao-conteudo);
 }
 
 .principal__conteudo__texto{
