@@ -21,7 +21,7 @@
   --decoracao-texto: none;
 
   --gap-entre-texto-e-botoes: 1.5rem;
-  --gap-entre-texto-e-texto: 1rem;
+  --gap-entre-texto-e-texto: 1.5rem;
   --gap-entre-logotipo-e-texto-do-botao: 0.5rem;
   --gap-entre-botao-e-botao: 1rem;
 
@@ -131,14 +131,14 @@ body{
   color: var(--cor-de-texto-destaque);
 }
 
-.principal__conteudo__ancoras{
+.principal__conteudo__ancora{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-os-botoes);
   align-items: var(--alinhamento-entre-botoes-e-paragrafo);
   gap: var(--gap-entre-botao-e-botao);
 }
 
-.principal__conteudo__ancoras__botao{
+.principal__conteudo__ancora__botao{
   display: var(--conteiner-flexibilidade);
   justify-content: var(--espacamento-entre-logotipo-e-texto-do-botao);
   gap: var(--gap-entre-logotipo-e-texto-do-botao);
@@ -154,14 +154,14 @@ body{
   width: var(--largura-dos-botoes);
 }
 
-.principal__conteudo__ancoras__paragrafo{
+.principal__conteudo__ancora__paragrafo{
   font-size: var(--fonte-pequena);
   font-family: var(--fonte-secundaria);
   font-weight: var(--fonte-leve);
   color: var(--cor-de-texto-principal);
 }
 
-.principal__conteudo__ancoras__botao:hover{
+.principal__conteudo__ancora__botao:hover{
   background-color: var(--cor-de-fundo-de-tela-dois);
 }
 
@@ -198,15 +198,16 @@ body{
   padding: var(--espacamento-entre-principal-e-laterais);
 }
 
-.principal__certificado__ancora{
+.principal__certificado__ancora__botao{
   text-decoration: var(--decoracao-texto);
   color: var(--cor-de-texto-secundario);
   padding: var(--preenchimento-lista-ancoras);
   border: var(--borda-dos-botoes);
   border-radius: var(--arredondamento-dos-botoes);
   margin: var(--espacamento-entre-lista-e-ancoras);
+  width: var(--largura-dos-botoes);
 }
 
-.principal__certificado__ancora:hover{
+.principal__certificado__ancora__botao:hover{
   background-color: var(--cor-de-fundo-de-tela-dois);
 }
