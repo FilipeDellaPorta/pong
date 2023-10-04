@@ -8,8 +8,6 @@ let larguraTela = 600;
 let alturaTela = 400;
 
 function setup() {
-    // let larguraTela = windowWidth/2;
-    // let alturaTela = windowHeight/2;
     createCanvas (larguraTela, alturaTela);
     //trilha.loop(); desativado para trabalhar em paz
 }
@@ -34,10 +32,3 @@ function draw() {
     silenciaSons();
     reativaSons();
 }
-
-// function windowResized() {
-//     // Esta função é chamada sempre que a janela do navegador é redimensionada
-//     larguraTela = windowWidth / 2;
-//     alturaTela = windowHeight / 2;
-//     resizeCanvas(larguraTela, alturaTela);
-// }
