@@ -67,7 +67,7 @@ canvas{
 }
 
 
-body{
+html, body{
     height: var(--usando-espaco-total-da-pagina);
     box-sizing: var(--sem-vazamento-de-elementos-filhos-da-tag-pai);
     background-color: var(--cor-de-fundo-de-tela);
@@ -220,6 +220,7 @@ body{
 }
 
 @media (max-width: 480px) {
+
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
@@ -244,3 +245,27 @@ body{
 
 } 
   
+@media (max-width: 1280) {
+  .cabecalho__menu {
+    justify-content: var(--alinhamento-de-responsividade);
+  }
+  .principal {
+    flex-direction: var(--direcionamento-de-responsividade);
+    align-items: var(--alinhamento-de-responsividade);
+  }
+
+  .principal__conteudo {
+    margin-bottom: var(--espacamento-de-responsividade);
+  }
+  .principal__conteudo__ancora {
+    flex-direction: var(--direcionamento-de-responsividade);
+  }
+  .principal__certificado__lista {
+    margin: var(--espacamento-de-responsividade);
+  }
+
+  .principal__sobre__mim {
+    margin: var(--espacamento-de-responsividade);
+  }
+
+}
