@@ -54,6 +54,7 @@
   --preenchimento-dos-botoes: 1rem;
   --preenchimento-rodape: 0.5rem;
   --preenchimento-lista-ancoras: 0.2rem;
+
 }
 
 *{
@@ -218,7 +219,7 @@ body{
   color: var(--cor-de-texto-destaque);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 480px) {
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
