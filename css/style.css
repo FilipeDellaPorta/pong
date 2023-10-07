@@ -216,7 +216,7 @@ body{
 
 @media (max-width: 1150px) {
   .cabecalho__menu {
-    align-items: center;
+    align-self: center;
   }
   .principal {
     flex-direction: column;
