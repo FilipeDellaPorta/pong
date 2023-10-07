@@ -29,7 +29,7 @@
   --direcionamento-entre-jogo-e-texto: row-reverse;
   --direcionamento-entre-texto-e-botoes: column;
   --direcionamento-entre-texto-e-texto: column;
-  --direcionamento-de-responsividade: center;
+  --direcionamento-de-responsividade: column;
 
   --alinhamento-de-texto: center;
   --alinhamento-de-menu: flex-end;
