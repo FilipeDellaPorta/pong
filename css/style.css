@@ -88,9 +88,9 @@ body{
 }
 
 .cabecalho__menu{
-  align-self: var(--alinhamento-de-menu);
   display: var(--conteiner-flexibilidade);
   gap: var(--gap-entre-texto-e-texto);
+  justify-content: var(--alinhamento-de-menu);
 }
 
 .cabecalho__menu__ancora{
@@ -220,7 +220,7 @@ body{
 
 @media (max-width: 1150px) {
   .cabecalho__menu {
-    align-self: var(--alinhamento-de-responsividade);
+    justify-content: var(--alinhamento-de-responsividade);
   }
   .principal {
     flex-direction: var(--direcionamento-de-responsividade);
