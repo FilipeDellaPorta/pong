@@ -245,7 +245,7 @@ html, body{
 
 } 
   
-@media (max-width: 1280) {
+@media (max-width: 880px) {
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
