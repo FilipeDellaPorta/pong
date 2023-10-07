@@ -223,7 +223,7 @@ html, body{
 
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
-    gap: var(--gap-entre-texto-e-texto);
+    gap: 2em;
   }
   .principal {
     flex-direction: var(--direcionamento-de-responsividade);
