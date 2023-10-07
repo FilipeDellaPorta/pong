@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;900&family=Roboto:wght@300;900&display=swap');
 
 :root{
   
@@ -16,6 +16,7 @@
   --fonte-pequena: 1.5rem;
   --fonte-principal: 'Roboto', sans-serif;
   --fonte-secundaria: var(--fonte-principal);
+  --fonte-destaque: 'Allura', cursive;
   --fonte-pesada: 900;
   --fonte-leve: 300;
   --decoracao-texto: none;
@@ -185,14 +186,14 @@ body{
 
 .principal__sobre__mim{
   display: var(--conteiner-flexibilidade);
-  flex-direction: var(--alinhamento-entre-texto-e-botoes);
+  flex-direction: var(--alinhamento-entre-texto-e-texto);
   padding: var(--espacamento-entre-principal-e-laterais);
   gap: var(--gap-entre-texto-e-texto);
 }
 
-.principal__certificado{
+.principal__certificado__lista{
   display: var(--conteiner-flexibilidade);
-  flex-direction: var(--alinhamento-entre-texto-e-botoes);
+  flex-direction: var(--alinhamento-entre-texto-e-texto);
   gap: var(--gap-entre-texto-e-texto);
   color: var(--cor-de-texto-secundario);
   font-family: var(--fonte-secundaria);
@@ -202,16 +203,15 @@ body{
 
 .principal__certificado__ancora__botao{
   text-decoration: var(--decoracao-texto);
+  font-family: var(--fonte-destaque);
+  font-size: var(--fonte-grande);
   color: var(--cor-de-texto-secundario);
-  padding: var(--preenchimento-lista-ancoras);
-  border: var(--borda-dos-botoes);
-  border-radius: var(--arredondamento-dos-botoes);
   margin: var(--espacamento-entre-lista-e-ancoras);
   width: var(--largura-dos-botoes);
 }
 
 .principal__certificado__ancora__botao:hover{
-  background-color: var(--cor-de-fundo-de-tela-dois);
+  color: var(--cor-de-texto-destaque);
 }
 
 @media (max-width: 1150px) {
@@ -225,5 +225,6 @@ body{
   .principal__conteudo__ancora {
     flex-direction: column;
   }
+
 } 
   
