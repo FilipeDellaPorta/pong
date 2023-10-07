@@ -222,8 +222,19 @@ body{
     flex-direction: column;
     align-items: center;
   }
+
+  .principal__conteudo {
+    margin-bottom: 1rem;
+  }
   .principal__conteudo__ancora {
     flex-direction: column;
+  }
+  .principal__certificado__lista {
+    margin: 1rem;
+  }
+
+  .principal__sobre__mim {
+    margin: 1rem;
   }
 
 } 
