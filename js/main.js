@@ -9,7 +9,7 @@ let alturaTela = 400;
 
 function setup() {
     createCanvas (larguraTela, alturaTela);
-    trilha.loop(); //desativado para trabalhar em paz
+    //trilha.loop(); //desativado para trabalhar em paz
 }
 
 function draw() {
@@ -33,8 +33,9 @@ function draw() {
     reativaSons();
 }
 
-// function windowResized() {
-//     larguraTela = windowWidth / 3;
-//     alturaTela = windowHeight / 2;
-//     resizeCanvas(larguraTela, alturaTela);
-// }
+function windowResized() {
+   larguraTela = 0;
+    alturaTela = 0;
+    resizeCanvas(larguraTela, alturaTela);
+    silenciaSons();
+}
