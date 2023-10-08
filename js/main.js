@@ -8,10 +8,8 @@ let larguraTela = 600;
 let alturaTela = 400;
 
 function setup() {
-    if (windowWidth > 1024) {
     createCanvas (larguraTela, alturaTela);
     //trilha.loop(); //desativado para trabalhar em paz
-    }
 }
 
 function draw() {
