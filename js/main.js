@@ -34,7 +34,7 @@ function draw() {
 }
 
 function windowResized() {
-   larguraTela = 0;
+    larguraTela = 0;
     alturaTela = 0;
     resizeCanvas(larguraTela, alturaTela);
     silenciaSons();
