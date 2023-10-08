@@ -253,9 +253,6 @@ html, body{
     font-family: var(--fonte-principal);
     align-self: var(--alinhamento-de-texto);
   }
-  .destaque-texto-responsivo {
-    color: var(--cor-de-texto-destaque);
-  }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
   }
