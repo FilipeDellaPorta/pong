@@ -184,6 +184,10 @@ html, body{
   display: var(--visibilidade-responsiva);
 }
 
+.principal__conteudo__imagem__responsividade {
+  display: var(--visibilidade-responsiva);
+}
+
 .rodape{
   /* position: fixed;
   bottom: 0;
@@ -259,6 +263,9 @@ html, body{
     font-family: var(--fonte-principal);
     align-self: var(--alinhamento-de-texto);
   }
+  .principal__conteudo__imagem__responsividade {
+    display: var(--visibilidade-flexivel);
+  }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
   }
@@ -295,6 +302,9 @@ html, body{
     font-weight: var(--fonte-pesada);
     font-family: var(--fonte-principal);
     align-self: var(--alinhamento-de-texto);
+  }
+  .principal__conteudo__imagem__responsividade {
+    display: var(--visibilidade-flexivel);
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
