@@ -274,6 +274,7 @@ html, body{
   }
   .principal__conteudo__imagem__responsividade {
     display: var(--visibilidade-flexivel);
+    flex-direction: var(--direcionamento-de-responsividade);
   }
   .imagem__responsiva {
     width: 200%;
