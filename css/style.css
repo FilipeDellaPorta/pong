@@ -254,6 +254,7 @@ html, body{
 
   .principal__conteudo {
     margin-bottom: var(--espacamento-de-responsividade);
+    align-items: var(--alinhamento-de-responsividade);
   }
   .principal__conteudo__texto {
     display: var(--visibilidade-responsiva);
