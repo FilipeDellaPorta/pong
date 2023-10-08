@@ -265,6 +265,7 @@ html, body{
   }
   .principal__conteudo__imagem__responsividade {
     display: var(--visibilidade-flexivel);
+    width: 50%;
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
