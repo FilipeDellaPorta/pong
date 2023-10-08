@@ -262,7 +262,7 @@ html, body{
 
 } 
   
-@media (max-width: 880px) {
+@media (max-width: 880px) and (orientation: landscape) {
   canvas {
     display: var(--visibilidade-responsiva);
   }
