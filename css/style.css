@@ -241,6 +241,9 @@ html, body{
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
+  .cabecalho__titulo {
+    padding: var(--espacamento-de-responsividade);
+  }
   .principal {
     flex-direction: var(--direcionamento-de-responsividade);
     align-items: var(--alinhamento-de-responsividade);
@@ -254,6 +257,7 @@ html, body{
   }
   .principal__conteudo__ancora {
     flex-direction: var(--direcionamento-de-responsividade);
+    padding: var(--espacamento-de-responsividade);
   }
   .principal__conteudo__aviso__responsividade {
     display: var(--visibilidade-flexivel);
