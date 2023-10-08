@@ -225,7 +225,9 @@ html, body{
 }
 
 @media (max-width: 480px) {
-
+  canvas {
+    display: var(--visibilidade-responsiva);
+  }
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
