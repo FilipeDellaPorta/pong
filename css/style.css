@@ -173,6 +173,10 @@ html, body{
   background-color: var(--cor-de-fundo-de-tela-dois);
 }
 
+.principal__conteudo__responsividade {
+  display: none;
+}
+
 .rodape{
   /* position: fixed;
   bottom: 0;
@@ -231,9 +235,13 @@ html, body{
 
   .principal__conteudo {
     margin-bottom: var(--espacamento-de-responsividade);
+    display: none;
   }
   .principal__conteudo__ancora {
     flex-direction: var(--direcionamento-de-responsividade);
+  }
+  .principal__conteudo__responsividade {
+    display: flex;
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
