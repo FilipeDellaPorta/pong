@@ -9,7 +9,7 @@ let alturaTela = 400;
 
 function setup() {
     createCanvas (larguraTela, alturaTela);
-    //trilha.loop(); desativado para trabalhar em paz
+    trilha.loop(); //desativado para trabalhar em paz
 }
 
 function draw() {
