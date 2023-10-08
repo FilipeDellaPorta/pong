@@ -267,7 +267,7 @@ html, body{
     display: var(--visibilidade-flexivel);
   }
   .imagem__responsiva {
-    width: 50%;
+    width: 75%;
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
