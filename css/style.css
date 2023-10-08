@@ -256,7 +256,6 @@ html, body{
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
   }
-
   .principal__sobre__mim {
     margin: var(--espacamento-de-responsividade);
   }
@@ -274,19 +273,29 @@ html, body{
     flex-direction: var(--direcionamento-de-responsividade);
     align-items: var(--alinhamento-de-responsividade);
   }
-
   .principal__conteudo {
     margin-bottom: var(--espacamento-de-responsividade);
+  }
+  .principal__conteudo__texto {
+    display: var(--visibilidade-responsiva);
   }
   .principal__conteudo__ancora {
     flex-direction: var(--direcionamento-de-responsividade);
   }
+  .principal__conteudo__responsividade {
+    display: var(--visibilidade-flexivel);
+    color: var(--cor-de-texto-principal);
+    font-size: var(--fonte-grande);
+    font-weight: var(--fonte-pesada);
+    font-family: var(--fonte-principal);
+    align-self: var(--alinhamento-de-texto);
+  }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
   }
-
   .principal__sobre__mim {
     margin: var(--espacamento-de-responsividade);
   }
 
 }
+
