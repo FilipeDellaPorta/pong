@@ -175,7 +175,7 @@ html, body{
 }
 
 .principal__conteudo__responsividade {
-  display: none;
+  display: var(--visibilidade-responsiva);
 }
 
 .rodape{
@@ -264,6 +264,9 @@ html, body{
 } 
   
 @media (max-width: 880px) {
+  canvas {
+    display: var(--visibilidade-responsiva);
+  }
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
   }
