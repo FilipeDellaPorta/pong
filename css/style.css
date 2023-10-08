@@ -274,6 +274,7 @@ html, body{
   }
   .imagem__responsiva {
     width: 100%;
+    padding: var(--espacamento-de-responsividade);
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
