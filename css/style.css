@@ -250,11 +250,13 @@ html, body{
   .principal {
     flex-direction: var(--direcionamento-de-responsividade);
     align-items: var(--alinhamento-de-responsividade);
+    justify-content: var(--alinhamento-de-responsividade);
   }
 
   .principal__conteudo {
     margin-bottom: var(--espacamento-de-responsividade);
     align-items: var(--alinhamento-de-responsividade);
+    justify-content: var(--alinhamento-de-responsividade);
   }
   .principal__conteudo__texto {
     display: var(--visibilidade-responsiva);
