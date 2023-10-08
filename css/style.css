@@ -275,11 +275,11 @@ html, body{
   .principal__conteudo__imagem__responsividade {
     display: var(--visibilidade-flexivel);
     flex-direction: var(--direcionamento-de-responsividade);
+    align-items: var(--alinhamento-de-responsividade);
   }
   .imagem__responsiva {
     width: 200%;
     padding: var(--espacamento-de-responsividade);
-    align-self: var(--alinhamento-de-responsividade);
   }
   .principal__certificado__lista {
     margin: var(--espacamento-de-responsividade);
