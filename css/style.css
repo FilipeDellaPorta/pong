@@ -102,15 +102,15 @@ html, body{
   font-weight: var(--fonte-pesada);
   text-align: var(--alinhamento-de-texto);
   color: var(--cor-de-texto-principal);
-  border: var(--borda-dos-botoes);
+  /* border: var(--borda-dos-botoes);
   border-radius: var(--arredondamento-dos-botoes);
   width: var(--largura-dos-botoes);
-  padding: var(--preenchimento-dos-botoes);
+  padding: var(--preenchimento-dos-botoes); */
 }
 
 .cabecalho__menu__ancora:hover{
   color: var(--cor-de-texto-destaque);
-  background-color: var(--cor-de-fundo-de-tela-dois);
+  /* background-color: var(--cor-de-fundo-de-tela-dois); */
 }
 
 .principal{
