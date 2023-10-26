@@ -221,16 +221,16 @@ html, body{
   padding: var(--espacamento-entre-principal-e-laterais);
 }
 
-.principal__certificado__ancora__botao{
+.principal__certificado__ancora{
   text-decoration: var(--decoracao-texto);
   font-family: var(--fonte-destaque);
   font-size: var(--fonte-grande);
-  color: var(--cor-de-texto-secundario);
+  color: var(--cor-de-texto-principal);
   margin: var(--espacamento-entre-lista-e-ancoras);
   width: var(--largura-dos-botoes);
 }
 
-.principal__certificado__ancora__botao:hover{
+.principal__certificado__ancora:hover{
   color: var(--cor-de-texto-destaque);
 }
 
