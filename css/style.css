@@ -240,6 +240,7 @@ html, body{
   }
   .cabecalho__menu {
     justify-content: var(--alinhamento-de-responsividade);
+    flex-direction: var(--direcionamento-de-responsividade);
   }
   .cabecalho__titulo {
     padding: var(--espacamento-de-responsividade);
