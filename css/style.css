@@ -247,6 +247,7 @@ html, body{
   }
   .cabecalho__menu__ancora {
     padding: var(--espacamento-de-responsividade);
+    align-self: var(--alinhamento-de-responsividade);
   }
   .principal {
     flex-direction: var(--direcionamento-de-responsividade);
