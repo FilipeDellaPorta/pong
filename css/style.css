@@ -101,7 +101,7 @@ html, body{
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-pesada);
   text-align: var(--alinhamento-de-texto);
-  color: var(--cor-de-texto-principal);
+  color: var(--cor-de-texto-secundario);
   /* border: var(--borda-dos-botoes);
   border-radius: var(--arredondamento-dos-botoes);
   width: var(--largura-dos-botoes);
