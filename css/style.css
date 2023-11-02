@@ -204,12 +204,6 @@ html, body{
   font-size: var(--fonte-pequena);
 }
 
-.principal__sobre__mim{
-  display: var(--visibilidade-flexivel);
-  flex-direction: var(--direcionamento-entre-texto-e-texto);
-  padding: var(--espacamento-entre-principal-e-laterais);
-  gap: var(--gap-entre-texto-e-texto);
-}
 
 @media (max-width: 912px) {
   canvas {
@@ -256,9 +250,6 @@ html, body{
   }
   .principal__conteudo__ancora {
     flex-direction: var(--direcionamento-de-responsividade);
-  }
-  .principal__sobre__mim {
-    margin: var(--espacamento-de-responsividade);
   }
 
 } 
@@ -308,9 +299,6 @@ html, body{
   }
   .principal__conteudo__ancora {
     flex-direction: var(--direcionamento-de-responsividade);
-  }
-  .principal__sobre__mim {
-    margin: var(--espacamento-de-responsividade);
   }
 
 } 
