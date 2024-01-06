@@ -41,14 +41,13 @@
   --espacamento-entre-jogo-e-texto: space-between;
   --espacamento-entre-os-botoes: space-evenly;
   --espacamento-entre-logotipo-e-texto-do-botao: space-between;
-  --espacamento-entre-cabecalho-e-topo: 2%;
-  --espacamento-entre-principal-e-laterais: 0 2.5%;
-  --espacamento-entre-conteudo-e-jogo: 0 2%;
+  --espacamento-entre-cabecalho-e-topo: 2rem;
+  --espacamento-entre-principal-e-laterais: 0 2.5rem;
+  --espacamento-entre-conteudo-e-jogo: 0 2rem;
   --espacamento-entre-lista-e-ancoras: 0.5rem;
   --espacamento-entre-principal-e-rodape: 2.8rem;
   --espacamento-de-responsividade: 1rem;
 
-  --largura-da-tela-seccao-conteudo: 50%;
   --largura-dos-botoes: 8.5rem;
   --borda-dos-botoes: 0.1rem solid var(--cor-de-texto-secundario);
   --arredondamento-dos-botoes: 1rem;
@@ -125,7 +124,6 @@ html, body{
   display: var(--visibilidade-flexivel);
   flex-direction: var(--direcionamento-entre-texto-e-botoes);
   gap: var(--gap-entre-texto-e-botoes);
-  width: var(--largura-da-tela-seccao-conteudo);
 }
 
 .principal__conteudo__texto{
@@ -204,102 +202,4 @@ html, body{
   font-size: var(--fonte-pequena);
 }
 
-
-@media (max-width: 912px) {
-  canvas {
-    display: var(--visibilidade-responsiva);
-  }
-  .cabecalho__menu {
-    justify-content: var(--alinhamento-de-responsividade);
-  }
-  .cabecalho__titulo {
-    padding: var(--espacamento-de-responsividade);
-  }
-  .cabecalho__menu__ancora {
-    padding: var(--espacamento-de-responsividade);
-  }
-  .principal {
-    flex-direction: var(--direcionamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-  }
-
-  .principal__conteudo {
-    margin-bottom: var(--espacamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-    flex-direction: var(--direcionamento-de-responsividade);
-  }
-  .principal__conteudo__aviso__responsividade {
-    display: var(--visibilidade-flexivel);
-    color: var(--cor-de-texto-principal);
-    font-size: var(--fonte-grande);
-    font-weight: var(--fonte-pesada);
-    font-family: var(--fonte-principal);
-    align-self: var(--alinhamento-de-texto);
-  }
-  .principal__conteudo__imagem__responsividade {
-    display: var(--visibilidade-flexivel);
-    flex-direction: var(--direcionamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-  }
-  .imagem__responsiva {
-    width: 200%;
-    padding: var(--espacamento-de-responsividade);
-  }
-  .principal__conteudo__texto {
-    display: var(--visibilidade-responsiva);
-  }
-  .principal__conteudo__ancora {
-    flex-direction: var(--direcionamento-de-responsividade);
-  }
-
-} 
-  
-@media (max-width: 1280px) and (orientation: landscape) {
-  canvas {
-    display: var(--visibilidade-responsiva);
-  }
-  .cabecalho__menu {
-    justify-content: var(--alinhamento-de-responsividade);
-  }
-  .cabecalho__titulo {
-    padding: var(--espacamento-de-responsividade);
-  }
-  .cabecalho__menu__ancora {
-    padding: var(--espacamento-de-responsividade);
-  }
-  .principal {
-    flex-direction: var(--direcionamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-  }
-
-  .principal__conteudo {
-    margin-bottom: var(--espacamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-    flex-direction: var(--direcionamento-de-responsividade);
-  }
-  .principal__conteudo__aviso__responsividade {
-    display: var(--visibilidade-flexivel);
-    color: var(--cor-de-texto-principal);
-    font-size: var(--fonte-grande);
-    font-weight: var(--fonte-pesada);
-    font-family: var(--fonte-principal);
-    align-self: var(--alinhamento-de-texto);
-  }
-  .principal__conteudo__imagem__responsividade {
-    display: var(--visibilidade-flexivel);
-    flex-direction: var(--direcionamento-de-responsividade);
-    align-items: var(--alinhamento-de-responsividade);
-  }
-  .imagem__responsiva {
-    width: 200%;
-    padding: var(--espacamento-de-responsividade);
-  }
-  .principal__conteudo__texto {
-    display: var(--visibilidade-responsiva);
-  }
-  .principal__conteudo__ancora {
-    flex-direction: var(--direcionamento-de-responsividade);
-  }
-
-} 
 
